@@ -1,6 +1,6 @@
 CREATE DATABASE clientdb;
-CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'test';
-GRANT ALL PRIVILEGES ON clientdb.* TO 'testuser'@'localhost';
+CREATE USER 'testuser'@'%' IDENTIFIED BY 'test';
+GRANT ALL PRIVILEGES ON clientdb.* TO 'testuser'@'%';
 
 use clientdb;
 
